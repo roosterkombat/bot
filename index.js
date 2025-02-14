@@ -33,8 +33,8 @@ app.listen(port, async () => {
 
 const bot = new Telegraf(BOT_TOKEN);
 
-const web_link = "YOUR PROJECT URL";
-const community_link = "https://t.me/coderushdevs";
+const web_link = "https://mining.roosterkombat.com/";
+const community_link = "https://t.me/Developer_Akash4";
 
 bot.start(async (ctx) => {
     const startPayload = ctx.startPayload;
