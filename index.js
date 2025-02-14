@@ -45,7 +45,7 @@ bot.start(async (ctx) => {
     try {
         // Send the image with a caption
         await ctx.replyWithPhoto(
-            { source: 'public/like.jpg' }, // or provide a URL if it's hosted online
+            { source: 'public/Banner.jpg' }, // or provide a URL if it's hosted online
             {
                 caption: `*Hey, ${userName}! Welcome to NewCats!*\nHow cool is your Cat?\nGot friends, relatives, co-workers?\nBring them all into the game now.\nMore buddies, more coins.`,
                 parse_mode: 'Markdown', // Ensure markdown is used in the caption
