@@ -34,7 +34,8 @@ app.listen(port, async () => {
 const bot = new Telegraf(BOT_TOKEN);
 
 const web_link = "https://mining.roosterkombat.com/";
-const community_link = "https://t.me/Developer_Akash4";
+const community_link = "https://t.me/roosterkombat";
+const presale_link = "https://buy.roosterkombat.com/";
 
 bot.start(async (ctx) => {
     const startPayload = ctx.startPayload;
@@ -47,12 +48,13 @@ bot.start(async (ctx) => {
         await ctx.replyWithPhoto(
             { source: 'public/Banner.jpg' }, // or provide a URL if it's hosted online
             {
-                caption: `*Hey, ${userName}! Welcome to NewCats!*\nHow cool is your Cat?\nGot friends, relatives, co-workers?\nBring them all into the game now.\nMore buddies, more coins.`,
+                caption: `*Hey, ${userName}! Welcome to Rooster Kombat!*\nHow cool is your Cat?\nGot friends, relatives, co-workers?\nBring them all into the game now.\nMore buddies, more coins.`,
                 parse_mode: 'Markdown', // Ensure markdown is used in the caption
                 reply_markup: {
                     inline_keyboard: [
                         [{ text: "✨Start now!✨", web_app: { url: urlSent } }],
                         [{ text: "👥Join Community👥", url: community_link }]
+                        [{ text: "👥Presale is Live👥", url: presale_link }]
                     ],
                 },
             }
