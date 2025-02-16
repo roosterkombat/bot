@@ -48,7 +48,7 @@ bot.start(async (ctx) => {
         await ctx.replyWithPhoto(
             { source: 'public/Banner.jpg' }, // or provide a URL if it's hosted online
             {
-                caption: `*Hey, ${userName}! Welcome to Rooster Kombat!*\nHow cool is your Cat?\nGot friends, relatives, co-workers?\nBring them all into the game now.\nMore buddies, more coins.`,
+                caption: `*Hey, ${userName}! Welcome to Rooster Kombat!*\nHow cool is your RBAT?\nGot friends, relatives, co-workers?\nBring them all into the game now.\nMore buddies, more coins.`,
                 parse_mode: 'Markdown', // Ensure markdown is used in the caption
                 reply_markup: {
                     inline_keyboard: [
