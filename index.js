@@ -35,7 +35,7 @@ const bot = new Telegraf(BOT_TOKEN);
 
 const web_link = "https://mining.roosterkombat.com/";
 const community_link = "https://t.me/roosterkombat";
-const presale_link = "https://buy.roosterkombat.com/";
+
 
 bot.start(async (ctx) => {
     const startPayload = ctx.startPayload;
@@ -54,7 +54,7 @@ bot.start(async (ctx) => {
                     inline_keyboard: [
                         [{ text: "✨Start now!✨", web_app: { url: urlSent } }],
                         [{ text: "👥Join Community👥", url: community_link }]
-                        [{ text: "👥Presale is Live👥", url: presale_link }]
+                    
                     ],
                 },
             }
