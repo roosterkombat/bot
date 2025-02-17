@@ -33,8 +33,8 @@ app.listen(port, async () => {
 
 const bot = new Telegraf(BOT_TOKEN);
 
-const web_link = "https://rbat.netlify.app";
-const community_link = "https://t.me/roosterkombat";
+const web_link = "https://rbat.netlify.app/";
+const community_link = "https://buy.roosterkombat.com";
 
 
 bot.start(async (ctx) => {
@@ -53,7 +53,7 @@ bot.start(async (ctx) => {
                 reply_markup: {
                     inline_keyboard: [
                         [{ text: "✨Start now!✨", web_app: { url: urlSent } }],
-                        [{ text: "👥Join Community👥", url: community_link }]
+                        [{ text: "👥Join Presale👥", url: community_link }]
                     
                     ],
                 },
