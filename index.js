@@ -52,7 +52,7 @@ bot.start(async (ctx) => {
                 parse_mode: 'Markdown', // Ensure markdown is used in the caption
                 reply_markup: {
                     inline_keyboard: [
-                        [{ text: "Start now!", web_app: { url: urlSent } }],
+                        [{ text: "Play now!", web_app: { url: urlSent } }],
                         [{ text: "Join Presale", url: community_link }]
                     
                     ],
